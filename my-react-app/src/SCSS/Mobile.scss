@@ -1,0 +1,23 @@
+@media(max-width: 900px){
+    .Header {
+        height: 60px;
+        align-items: center;
+
+        .Nav_links {
+            display: none;
+        }
+
+        .Menu {
+            display: flex;
+        }
+
+        .Mobile_menu {
+            margin-top: 300%;
+            width: 40px;
+            display: block;
+            padding: 15px;
+            background-color: #fff;
+            color: black;
+        }
+    }
+}
