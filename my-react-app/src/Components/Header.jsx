@@ -1,16 +1,20 @@
 import React, { useState } from 'react'
 import Profile from '../assets/hassan.jpg'
 import Mobile from './Mobile'
+import { AiOutlineMenu } from 'react-icons/ai'
 
 const Header = () => {
 
     const [show, setShow] = useState(false)
+    const [menu, setMenu] = useState('Menu')
 
     const Check = () =>{
       if(show) {
         setShow(false)
+       
       } else {
         setShow(true)
+    
       }
     }
   return (
@@ -26,7 +30,7 @@ const Header = () => {
                 <li>Projects</li>
                 <li>Contact</li>
             </ul>
-            <div className='Menu' onClick={Check}>Menu</div>
+            <div className='Menu' onClick={Check}><AiOutlineMenu/></div>
             {
                 show? <Mobile/> : null
             }

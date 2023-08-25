@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .Header {
@@ -10,24 +11,31 @@
     padding: 5px 10px;
     color: rgb(0, 0, 0);
     display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.75);
     justify-content: space-between;
-    background-color: rgb(196, 24, 24);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
 
     .Image_holder {
         width: 35%;
         height: 100%;
         display: flex;
-        // justify-content: space-around;
         align-items: center;
-        // border-radius: 50%;
-        // background-color: black;
         object-fit: contain;
 
         h3 {
             margin: 0 10px;
             font-weight: 700;
+
+            &:hover {
+                cursor: pointer;
+                color: rgb(236, 204, 20);
+            }
         }
+
 
         img {
             width: 15%;
@@ -47,12 +55,69 @@
         li {
             list-style-type: none;
             font-weight: 500;
+
+            &:hover {
+                cursor: pointer;
+                color: rgb(236, 204, 20);
+            }
         }
     }
 
     .Menu {
         display: none;
+        padding-right: 10px;
+    }
+
+    .Mobile_menu {
+        display: none;
     }
 }
+
+.Homepage_container {
+    width: 100%;
+    height: calc(100vh - 75px);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../assets/portfolio\ background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1 {
+       
+        padding: 20px;
+        font-size:65px ;
+    }
+
+    p {
+        width: 70%;
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 3%;
+    }
+
+    .Project_btn {
+        background-color: rgb(236, 204, 20);
+        color: black;
+        width: 13%;
+        font-size: 20px;
+        border: none;
+        border-radius: 5px;
+        font-weight: 500;
+        padding: 15px;
+
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.04);
+          
+        }
+    }
+
+  
+
+}
+
+
 
 

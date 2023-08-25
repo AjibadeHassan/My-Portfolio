@@ -2,6 +2,11 @@
     .Header {
         height: 60px;
         align-items: center;
+        padding-right: 0px;
+
+        .Image_holder {
+            width: 45%;
+        }
 
         .Nav_links {
             display: none;
@@ -9,15 +14,52 @@
 
         .Menu {
             display: flex;
+            width: 40%;
+            font-weight: 800;
+            font-size: 25px;
+            justify-content: flex-end;
         }
 
+       
+
         .Mobile_menu {
-            margin-top: 300%;
-            width: 40px;
-            display: block;
-            padding: 15px;
-            background-color: #fff;
+        width: 25%;
+        height: 45vh;
+        display: flex;
+        position: absolute;
+        border-radius: 7px;
+        z-index: 50;
+        animation: myAnim 0.3s ease-in;
+        transition: all 350ms;
+        top: 100%;
+        right: 0;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        justify-content: space-evenly;
             color: black;
+
+            li {
+                list-style-type: none;
+            }
         }
     }
+
+    .Homepage_container {
+        h1 {
+            font-size: 40px;
+        }
+
+        p {
+            width: 90%;
+            font-size: 19px;
+        }
+
+        .Project_btn{
+            width: 30%;
+            padding: 10px;
+        }
+    }
+ 
+
 }
