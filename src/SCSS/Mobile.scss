@@ -62,6 +62,36 @@
             padding: 10px;
         }
     }
+
+    .About_container {
+
+        p {
+            width: 100%;
+        }
+        .content_section {
+            flex-direction: column;
+    
+            .About_writeup {
+                width: 85%;
+                margin-bottom: 10%;
+    
+               
+    
+                button {
+                    height: 11%;
+                }
+            }
+    
+            .My_skills {
+                width: 90%;
+            }
+            
+            
+        }
+    }
+
+
+    
  
 
 }
